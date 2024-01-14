@@ -170,3 +170,5 @@ setInterval(() => {
 app.listen(port, ()=>{
 	console.log(`example app listening on port ${port}`);
 })
+
+console.log('server did load')
