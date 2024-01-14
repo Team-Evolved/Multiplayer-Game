@@ -16,8 +16,8 @@ app.get('/', (req,res)=>{
 	res.sendFile(__dirname + '/index.html')
 })
 
-
-
+const backEndPlayers     = {}
+const backEndProjectiles = {}
 
 app.listen(port, ()=>{
 	console.log(`example app listening on port ${port}`);
