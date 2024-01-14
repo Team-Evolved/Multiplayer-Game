@@ -1,10 +1,14 @@
+// Import ES6 modules
+
 import express from 'express'
-const app = express()
-
-// socket.io setup
 import http from 'http'
+import {Server} from 'socket.io' // socket.io setup
 
+// Create instances
 
+const app = express()
+const server = http.createServer(app)
+const io = new Server(server, {pingInterval: 2000, pingTimeout: 8000})
 const port = 3000
 
 app.use(express.static('public'));
