@@ -32,8 +32,8 @@ io.on('connection', (socket) => {
     projectileId++
 
 		const velocity = {
-      x: Math.cos(angle) * 5,
-      y: Math.sin(angle) * 5
+      x: Math.cos(angle) * 6,
+      y: Math.sin(angle) * 6
     }
 
     backEndProjectiles[projectileId] = {
