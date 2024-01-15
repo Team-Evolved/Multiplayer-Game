@@ -65,11 +65,6 @@ io.on('connection', (socket) => {
     backEndPlayers[socket.id].radius = RADIUS
   })
 
-
-
-
-
-
   socket.on('disconnect', (reason) => {
     console.log(reason)
     delete backEndPlayers[socket.id]
